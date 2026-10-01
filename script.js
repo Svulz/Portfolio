@@ -10,10 +10,6 @@
 
 const translations = {
 
-    /* =====================================================
-       HUNGARIAN
-    ===================================================== */
-
     hu: {
 
         htmlLang: "hu",
@@ -77,7 +73,8 @@ const translations = {
             browser: "Böngésző",
             mobile: "Mobil",
             tablet: "Tablet",
-            desktop: "Asztali"
+            desktop: "Asztali",
+            watch: "Okosóra"
         },
 
         exchange: {
@@ -107,22 +104,15 @@ const translations = {
         },
 
         cv: {
-
             eyebrow: "RÓLAM",
-
             title: "Curriculum Vitae",
-
             print: "CV nyomtatása",
-
             position: "Junior Cloud Engineer",
 
             profile: {
-
                 title: "Profil",
-
                 text:
                     "Programtervező informatikus BSc diplomával rendelkezem az SZTE-ről, DevOps specializációval. A szakdolgozatom leginkább egy gyakorlati probléma megoldásához vezetett, melynek megvalósítása során DevOps és Cloud technológiákat alkalmaztam. Mindezek mellett KodeKloud - DevOps Pro tanúsítvánnyal rendelkezem. Nyelveket tekintve angolul középfokon (B2), németül felsőfokon (C1) és szlovénül szintén felsőfokon (C1) tudok magabiztosan kommunikálni. Szakmailag tudásomat a DevOps területén szeretném a továbbiakban elmélyíteni és fejleszteni."
-
             },
 
             experience: {
@@ -130,21 +120,14 @@ const translations = {
                 title: "Tapasztalat",
 
                 current: {
-
                     date: "2026 — jelenleg",
-
                     title: "Pozíció / Munkahely",
-
                     text: "Még nincsen. Dolgozunk rajta."
-
                 },
 
                 previous: {
-
                     title: "Korábbi pozíció",
-
                     text: "Még nincsen. Dolgozunk rajta."
-
                 }
 
             },
@@ -160,85 +143,18 @@ const translations = {
                     "Programtervező informatikus BSc nappali képzés",
 
                 specialization:
-                    "Specializáció: DevOps területén"
-
-            },
-
-            /* =================================================
-               LANGUAGES
-            ================================================= */
-
-            languages: {
-
-                title: "Nyelvtudás",
-
-                hungarian: {
-
-                    name: "Magyar",
-
-                    level: "Anyanyelvi szint (C2)"
-
-                },
-
-                english: {
-
-                    name: "Angol",
-
-                    level: "Középfok (B2)"
-
-                },
-
-                german: {
-
-                    name: "Német",
-
-                    level: "Felsőfok (C1)"
-
-                },
-
-                slovenian: {
-
-                    name: "Szlovén",
-
-                    level: "Felsőfok (C1)"
-
-                }
-
-            },
-
-            /* =================================================
-               CERTIFICATIONS
-            ================================================= */
-
-            certifications: {
-
-                title:
-                    "Tanúsítványok és egyéb képesítések",
-
-                devopsPro: {
-
-                    title:
-                        "KodeKloud DevOps Pro",
-
-                    description:
-                        "DevOps Pro tanúsítvány"
-
-                }
+                    "Specializáció: DevOps"
 
             },
 
             skills: {
-
                 title: "Készségek"
-
             }
 
         },
 
         footer: {
-
             rights: "Minden jog fenntartva."
-
         },
 
         weatherCodes: {
@@ -337,7 +253,8 @@ const translations = {
             browser: "Browser",
             mobile: "Mobile",
             tablet: "Tablet",
-            desktop: "Desktop"
+            desktop: "Desktop",
+            watch: "Smartwatch"
         },
 
         exchange: {
@@ -367,22 +284,15 @@ const translations = {
         },
 
         cv: {
-
             eyebrow: "ABOUT ME",
-
             title: "Curriculum Vitae",
-
             print: "Print CV",
-
             position: "Junior Cloud Engineer",
 
             profile: {
-
                 title: "Profile",
-
                 text:
                     "I hold a BSc degree in Computer Science from the University of Szeged, with a specialization in DevOps. My thesis focused on solving a practical problem using DevOps and Cloud technologies. I also hold the KodeKloud DevOps Pro certification. Regarding languages, I communicate confidently in English at B2 level, German at C1 level and Slovenian at C1 level. Professionally, I would like to further deepen and develop my knowledge in the field of DevOps."
-
             },
 
             experience: {
@@ -390,21 +300,14 @@ const translations = {
                 title: "Experience",
 
                 current: {
-
                     date: "2026 — present",
-
                     title: "Position / Workplace",
-
                     text: "Not yet. We are working on it."
-
                 },
 
                 previous: {
-
                     title: "Previous position",
-
                     text: "Not yet. We are working on it."
-
                 }
 
             },
@@ -424,81 +327,14 @@ const translations = {
 
             },
 
-            /* =================================================
-               LANGUAGES
-            ================================================= */
-
-            languages: {
-
-                title: "Languages",
-
-                hungarian: {
-
-                    name: "Hungarian",
-
-                    level: "Native proficiency (C2)"
-
-                },
-
-                english: {
-
-                    name: "English",
-
-                    level: "Upper-intermediate (B2)"
-
-                },
-
-                german: {
-
-                    name: "German",
-
-                    level: "Advanced (C1)"
-
-                },
-
-                slovenian: {
-
-                    name: "Slovenian",
-
-                    level: "Advanced (C1)"
-
-                }
-
-            },
-
-            /* =================================================
-               CERTIFICATIONS
-            ================================================= */
-
-            certifications: {
-
-                title:
-                    "Certifications & Qualifications",
-
-                devopsPro: {
-
-                    title:
-                        "KodeKloud DevOps Pro",
-
-                    description:
-                        "DevOps Pro certification"
-
-                }
-
-            },
-
             skills: {
-
                 title: "Skills"
-
             }
 
         },
 
         footer: {
-
             rights: "All rights reserved."
-
         },
 
         weatherCodes: {
@@ -597,7 +433,8 @@ const translations = {
             browser: "Browser",
             mobile: "Mobil",
             tablet: "Tablet",
-            desktop: "Desktop"
+            desktop: "Desktop",
+            watch: "Smartwatch"
         },
 
         exchange: {
@@ -627,22 +464,15 @@ const translations = {
         },
 
         cv: {
-
             eyebrow: "ÜBER MICH",
-
             title: "Lebenslauf",
-
             print: "Lebenslauf drucken",
-
             position: "Junior Cloud Engineer",
 
             profile: {
-
                 title: "Profil",
-
                 text:
                     "Ich habe einen BSc-Abschluss in Informatik an der Universität Szeged mit Spezialisierung auf DevOps. Meine Abschlussarbeit konzentrierte sich auf die Lösung eines praktischen Problems unter Einsatz von DevOps- und Cloud-Technologien. Außerdem besitze ich die KodeKloud DevOps Pro Zertifizierung. Sprachlich kommuniziere ich sicher auf Englisch (B2), Deutsch (C1) und Slowenisch (C1). Beruflich möchte ich meine Kenntnisse im Bereich DevOps weiter vertiefen und ausbauen."
-
             },
 
             experience: {
@@ -650,21 +480,14 @@ const translations = {
                 title: "Berufserfahrung",
 
                 current: {
-
                     date: "2026 — heute",
-
                     title: "Position / Arbeitsplatz",
-
                     text: "Noch nicht. Wir arbeiten daran."
-
                 },
 
                 previous: {
-
                     title: "Frühere Position",
-
                     text: "Noch nicht. Wir arbeiten daran."
-
                 }
 
             },
@@ -684,81 +507,14 @@ const translations = {
 
             },
 
-            /* =================================================
-               LANGUAGES
-            ================================================= */
-
-            languages: {
-
-                title: "Sprachkenntnisse",
-
-                hungarian: {
-
-                    name: "Ungarisch",
-
-                    level: "Muttersprachliches Niveau (C2)"
-
-                },
-
-                english: {
-
-                    name: "Englisch",
-
-                    level: "Mittelstufe (B2)"
-
-                },
-
-                german: {
-
-                    name: "Deutsch",
-
-                    level: "Fortgeschritten (C1)"
-
-                },
-
-                slovenian: {
-
-                    name: "Slowenisch",
-
-                    level: "Fortgeschritten (C1)"
-
-                }
-
-            },
-
-            /* =================================================
-               CERTIFICATIONS
-            ================================================= */
-
-            certifications: {
-
-                title:
-                    "Zertifikate & weitere Qualifikationen",
-
-                devopsPro: {
-
-                    title:
-                        "KodeKloud DevOps Pro",
-
-                    description:
-                        "DevOps Pro Zertifikat"
-
-                }
-
-            },
-
             skills: {
-
                 title: "Fähigkeiten"
-
             }
 
         },
 
         footer: {
-
             rights: "Alle Rechte vorbehalten."
-
         },
 
         weatherCodes: {
@@ -857,7 +613,8 @@ const translations = {
             browser: "Brskalnik",
             mobile: "Mobilni telefon",
             tablet: "Tablica",
-            desktop: "Namizni računalnik"
+            desktop: "Namizni računalnik",
+            watch: "Pametna ura"
         },
 
         exchange: {
@@ -887,22 +644,15 @@ const translations = {
         },
 
         cv: {
-
             eyebrow: "O MENI",
-
             title: "Življenjepis",
-
             print: "Natisni življenjepis",
-
             position: "Junior Cloud Engineer",
 
             profile: {
-
                 title: "Profil",
-
                 text:
                     "Imam diplomo BSc iz računalništva Univerze v Szegedu s specializacijo na področju DevOps. Moje diplomsko delo je bilo osredotočeno na reševanje praktičnega problema z uporabo DevOps in Cloud tehnologij. Poleg tega imam certifikat KodeKloud DevOps Pro. Tekoče komuniciram v angleščini na ravni B2, nemščini na ravni C1 in slovenščini na ravni C1. Na strokovnem področju želim svoje znanje DevOps še naprej poglabljati in razvijati."
-
             },
 
             experience: {
@@ -910,21 +660,14 @@ const translations = {
                 title: "Delovne izkušnje",
 
                 current: {
-
                     date: "2026 — danes",
-
                     title: "Delovno mesto / podjetje",
-
                     text: "Še ne. Delamo na tem."
-
                 },
 
                 previous: {
-
                     title: "Prejšnje delovno mesto",
-
                     text: "Še ne. Delamo na tem."
-
                 }
 
             },
@@ -944,81 +687,14 @@ const translations = {
 
             },
 
-            /* =================================================
-               LANGUAGES
-            ================================================= */
-
-            languages: {
-
-                title: "Znanje jezikov",
-
-                hungarian: {
-
-                    name: "Madžarščina",
-
-                    level: "Raven maternega jezika (C2)"
-
-                },
-
-                english: {
-
-                    name: "Angleščina",
-
-                    level: "Srednja raven (B2)"
-
-                },
-
-                german: {
-
-                    name: "Nemščina",
-
-                    level: "Napredna raven (C1)"
-
-                },
-
-                slovenian: {
-
-                    name: "Slovenščina",
-
-                    level: "Napredna raven (C1)"
-
-                }
-
-            },
-
-            /* =================================================
-               CERTIFICATIONS
-            ================================================= */
-
-            certifications: {
-
-                title:
-                    "Certifikati in druge kvalifikacije",
-
-                devopsPro: {
-
-                    title:
-                        "KodeKloud DevOps Pro",
-
-                    description:
-                        "Certifikat DevOps Pro"
-
-                }
-
-            },
-
             skills: {
-
                 title: "Znanja in veščine"
-
             }
 
         },
 
         footer: {
-
             rights: "Vse pravice pridržane."
-
         },
 
         weatherCodes: {
@@ -1191,6 +867,11 @@ const languageToggle =
         "languageToggle"
     );
 
+const languageMenu =
+    document.getElementById(
+        "languageMenu"
+    );
+
 const languageSelector =
     document.querySelector(
         ".language-selector"
@@ -1232,9 +913,13 @@ document
                     button.dataset.language
                 );
 
-                languageSelector.classList.remove(
-                    "active"
-                );
+                if (languageSelector) {
+
+                    languageSelector.classList.remove(
+                        "active"
+                    );
+
+                }
 
             }
         );
@@ -1393,15 +1078,10 @@ const todayInfo =
 function getLocale() {
 
     return {
-
         hu: "hu-HU",
-
         en: "en-GB",
-
         de: "de-DE",
-
         sl: "sl-SI"
-
     }[currentLanguage] || "hu-HU";
 
 }
@@ -1501,6 +1181,11 @@ const deviceInfo =
         "deviceInfo"
     );
 
+const deviceIcon =
+    document.getElementById(
+        "deviceIcon"
+    );
+
 
 function updateDeviceInfo() {
 
@@ -1508,23 +1193,111 @@ function updateDeviceInfo() {
         return;
     }
 
+
     const width =
         window.innerWidth;
 
+    const userAgent =
+        navigator.userAgent.toLowerCase();
 
-    if (width <= 650) {
+
+    /*
+       OKOSÓRA
+       -----------------------------------------------------
+       Nagyon kis kijelző vagy smartwatch / Wear OS
+       azonosítása.
+    */
+
+    const isWatch =
+        width <= 250 ||
+        /watch|sm-watch|wear os|wearos/.test(
+            userAgent
+        );
+
+
+    /*
+       TABLET
+       -----------------------------------------------------
+       iPad, Android tablet vagy érintőképernyős,
+       közepes méretű eszköz.
+    */
+
+    const isTablet =
+        !isWatch &&
+        (
+            /ipad|tablet|android(?!.*mobile)/.test(
+                userAgent
+            ) ||
+            (
+                navigator.maxTouchPoints > 1 &&
+                width > 650 &&
+                width <= 1100
+            )
+        );
+
+
+    /*
+       TELEFON
+       -----------------------------------------------------
+       iPhone, Android mobil vagy kis kijelző.
+    */
+
+    const isMobile =
+        !isWatch &&
+        !isTablet &&
+        (
+            /iphone|ipod|android.*mobile|windows phone|mobile/.test(
+                userAgent
+            ) ||
+            width <= 650
+        );
+
+
+    /*
+       ESZKÖZ MEGJELENÍTÉSE
+    */
+
+    if (isWatch) {
+
+        deviceInfo.textContent =
+            getTranslation(
+                "quick.watch"
+            );
+
+        if (deviceIcon) {
+
+            deviceIcon.textContent =
+                "⌚";
+
+        }
+
+    } else if (isMobile) {
 
         deviceInfo.textContent =
             getTranslation(
                 "quick.mobile"
             );
 
-    } else if (width <= 1000) {
+        if (deviceIcon) {
+
+            deviceIcon.textContent =
+                "📱";
+
+        }
+
+    } else if (isTablet) {
 
         deviceInfo.textContent =
             getTranslation(
                 "quick.tablet"
             );
+
+        if (deviceIcon) {
+
+            deviceIcon.textContent =
+                "📲";
+
+        }
 
     } else {
 
@@ -1533,12 +1306,20 @@ function updateDeviceInfo() {
                 "quick.desktop"
             );
 
+        if (deviceIcon) {
+
+            deviceIcon.textContent =
+                "💻";
+
+        }
+
     }
 
 }
 
 
 updateDeviceInfo();
+
 
 window.addEventListener(
     "resize",
@@ -2200,11 +1981,8 @@ function getCurrentLocationText() {
     const names = {
 
         hu: "Aktuális hely",
-
         en: "Current location",
-
         de: "Aktueller Standort",
-
         sl: "Trenutna lokacija"
 
     };
@@ -2229,6 +2007,12 @@ function refreshWeatherLanguage() {
 
     }
 
+
+    /*
+       Ha már betöltődött az időjárás,
+       újra lekérjük a kódhoz tartozó
+       fordítást.
+    */
 
     loadWeather();
 
@@ -2360,11 +2144,9 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
-
                         throw new Error(
                             "EUR/HUF API error"
                         );
-
                     }
 
                     return response.json();
@@ -2376,11 +2158,9 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
-
                         throw new Error(
                             "USD/HUF API error"
                         );
-
                     }
 
                     return response.json();
@@ -2392,11 +2172,9 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
-
                         throw new Error(
                             "GBP/HUF API error"
                         );
-
                     }
 
                     return response.json();
@@ -2408,11 +2186,9 @@ async function loadExchangeRates() {
                 ).then(response => {
 
                     if (!response.ok) {
-
                         throw new Error(
                             "CHF/HUF API error"
                         );
-
                     }
 
                     return response.json();
@@ -2565,7 +2341,5 @@ if (yearElement) {
 setLanguage(
     currentLanguage
 );
-
-
 
 
