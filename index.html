@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Személyes portfolio és dashboard"
+    >
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Saját Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <a href="#home" class="logo">
+            <span class="logo-dot"></span>
+            <span data-i18n="logo">Vissza az oldal tetejére</span>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home" data-i18n="nav.home">
+                Főoldal
+            </a>
+
+            <a href="#projects" data-i18n="nav.projects">
+                Projektek
+            </a>
+
+            <a href="#cv" data-i18n="nav.cv">
+                CV
+            </a>
+
+            <a href="#dashboard" data-i18n="nav.dashboard">
+                Dashboard
+            </a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <!-- NYELVVÁLTÓ -->
+
+            <div class="language-selector">
+
+                <button
+                    class="language-toggle"
+                    id="languageToggle"
+                    type="button"
+                    aria-label="Nyelv kiválasztása"
+                >
+                    <span id="currentLanguage">HU</span>
+                    <span class="language-arrow">⌄</span>
+                </button>
+
+                <div
+                    class="language-menu"
+                    id="languageMenu"
+                >
+
+                    <button
+                        type="button"
+                        data-language="hu"
+                    >
+                        🇭🇺 Magyar
+                    </button>
+
+                    <button
+                        type="button"
+                        data-language="en"
+                    >
+                        🇬🇧 English
+                    </button>
+
+                    <button
+                        type="button"
+                        data-language="de"
+                    >
+                        🇩🇪 Deutsch
+                    </button>
+
+                    <button
+                        type="button"
+                        data-language="sl"
+                    >
+                        🇸🇮 Slovenščina
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TÉMA -->
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Világos/sötét mód váltása"
+                title="Téma váltása"
+                type="button"
+            >
+                <span id="themeIcon">☀</span>
+            </button>
+
+
+            <!-- MOBIL MENÜ -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Menü megnyitása"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero section" id="home">
+
+        <div class="hero-content">
+
+            <div class="status">
+                <span class="status-dot"></span>
+                <span data-i18n="hero.online">Online</span>
+            </div>
+
+            <p class="eyebrow" data-i18n="hero.eyebrow">
+                Weboldal
+            </p>
+
+            <h1>
+                <span class="accent">
+                    Balla Árpád Máté
+                </span>
+            </h1>
+
+            <p
+                class="hero-text"
+                data-i18n="hero.description"
+            >
+                Ez az én személyes oldalam, ahol mindent leírok
+                magamról és főbb érdeklődési köreimről.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#projects"
+                    class="btn btn-primary"
+                >
+                    <span data-i18n="buttons.projects">
+                        Projects
+                    </span>
+
+                    <span>→</span>
+                </a>
+
+                <a
+                    href="#cv"
+                    class="btn btn-secondary"
+                    data-i18n="buttons.cv"
+                >
+                    CV
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CLOCK -->
+
+        <div class="clock-container">
+
+            <div class="clock-card">
+
+                <div
+                    class="clock-label"
+                    data-i18n="clock.localTime"
+                >
+                    HELYI IDŐ
+                </div>
+
+                <div
+                    class="clock"
+                    id="clock"
+                >
+                    00:00:00
+                </div>
+
+                <div
+                    class="date"
+                    id="date"
+                >
+                    Betöltés...
+                </div>
+
+                <div class="clock-line"></div>
+
+                <div
+                    class="timezone"
+                    id="timezone"
+                >
+                    Europe/Budapest
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section
+        class="section dashboard-section"
+        id="dashboard"
+    >
+
+        <div class="section-heading">
+
+            <div>
+
+                <p
+                    class="eyebrow"
+                    data-i18n="dashboard.eyebrow"
+                >
+                    DASHBOARD
+                </p>
+
+                <h2 data-i18n="dashboard.title">
+                    Aktuális információk
+                </h2>
+
+            </div>
+
+            <span
+                class="updated"
+                id="lastUpdated"
+            >
+                Frissítés: —
+            </span>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <!-- WEATHER -->
+
+            <article class="card weather-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <p
+                            class="card-label"
+                            data-i18n="weather.label"
+                        >
+                            IDŐJÁRÁS
+                        </p>
+
+                        <h3 id="weatherLocation">
+                            Helymeghatározás...
+                        </h3>
+
+                    </div>
+
+                    <div
+                        class="weather-icon"
+                        id="weatherIcon"
+                    >
+                        ☁
+                    </div>
+
+                </div>
+
+                <div class="temperature">
+
+                    <span id="temperature">
+                        --
+                    </span>
+
+                    <small>°C</small>
+
+                </div>
+
+                <p
+                    class="weather-description"
+                    id="weatherDescription"
+                >
+                    Betöltés...
+                </p>
+
+                <div class="weather-details">
+
+                    <div>
+                        <span data-i18n="weather.wind">
+                            💨 Szél
+                        </span>
+
+                        <strong id="wind">
+                            -- km/h
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span data-i18n="weather.humidity">
+                            💧 Páratartalom
+                        </span>
+
+                        <strong id="humidity">
+                            --%
+                        </strong>
+                    </div>
+
+                </div>
+
+                <button
+                    class="small-btn"
+                    id="refreshWeather"
+                    data-i18n="weather.refresh"
+                    type="button"
+                >
+                    ↻ Időjárás frissítése
+                </button>
+
+            </article>
+
+
+            <!-- CALENDAR -->
+
+            <article class="card calendar-card">
+
+                <div class="calendar-top">
+
+                    <button
+                        class="calendar-nav"
+                        id="prevMonth"
+                        type="button"
+                        aria-label="Előző hónap"
+                    >
+                        ‹
+                    </button>
+
+                    <div>
+
+                        <p
+                            class="card-label"
+                            data-i18n="calendar.label"
+                        >
+                            NAPTÁR
+                        </p>
+
+                        <h3 id="calendarTitle">
+                            —
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="calendar-nav"
+                        id="nextMonth"
+                        type="button"
+                        aria-label="Következő hónap"
+                    >
+                        ›
+                    </button>
+
+                </div>
+
+
+                <div class="calendar-weekdays">
+
+                    <span data-i18n="calendar.mon">H</span>
+                    <span data-i18n="calendar.tue">K</span>
+                    <span data-i18n="calendar.wed">Sze</span>
+                    <span data-i18n="calendar.thu">Cs</span>
+                    <span data-i18n="calendar.fri">P</span>
+                    <span data-i18n="calendar.sat">Szo</span>
+                    <span data-i18n="calendar.sun">V</span>
+
+                </div>
+
+                <div
+                    class="calendar-days"
+                    id="calendarDays"
+                ></div>
+
+            </article>
+
+
+            <!-- QUICK INFO -->
+
+            <article class="card info-card">
+
+                <p
+                    class="card-label"
+                    data-i18n="quick.label"
+                >
+                    GYORS INFÓ
+                </p>
+
+                <div class="info-list">
+
+                    <div class="info-row">
+
+                        <span>📅</span>
+
+                        <div>
+
+                            <small data-i18n="quick.date">
+                                Mai dátum
+                            </small>
+
+                            <strong id="todayInfo">
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>🕐</span>
+
+                        <div>
+
+                            <small data-i18n="quick.timezone">
+                                Időzóna
+                            </small>
+
+                            <strong id="timezoneInfo">
+                                Europe/Budapest
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>💻</span>
+
+                        <div>
+
+                            <small data-i18n="quick.device">
+                                Eszköz
+                            </small>
+
+                            <strong id="deviceInfo">
+                                Böngésző
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- EXCHANGE RATES -->
+
+            <article class="card exchange-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <p
+                            class="card-label"
+                            data-i18n="exchange.label"
+                        >
+                            ÁRFOLYAMOK
+                        </p>
+
+                        <h3 data-i18n="exchange.title">
+                            Devizák
+                        </h3>
+
+                    </div>
+
+                    <div class="exchange-icon">
+                        €
+                    </div>
+
+                </div>
+
+
+                <div class="exchange-list">
+
+                    <div class="exchange-row">
+
+                        <div>
+
+                            <strong>
+                                EUR / HUF
+                            </strong>
+
+                            <small data-i18n="currency.eur">
+                                Euro
+                            </small>
+
+                        </div>
+
+                        <strong id="eurHuf">
+                            -- Ft
+                        </strong>
+
+                    </div>
+
+
+                    <div class="exchange-row">
+
+                        <div>
+
+                            <strong>
+                                USD / HUF
+                            </strong>
+
+                            <small data-i18n="currency.usd">
+                                Amerikai dollár
+                            </small>
+
+                        </div>
+
+                        <strong id="usdHuf">
+                            -- Ft
+                        </strong>
+
+                    </div>
+
+
+                    <div class="exchange-row">
+
+                        <div>
+
+                            <strong>
+                                GBP / HUF
+                            </strong>
+
+                            <small data-i18n="currency.gbp">
+                                Angol font
+                            </small>
+
+                        </div>
+
+                        <strong id="gbpHuf">
+                            -- Ft
+                        </strong>
+
+                    </div>
+
+
+                    <div class="exchange-row">
+
+                        <div>
+
+                            <strong>
+                                CHF / HUF
+                            </strong>
+
+                            <small data-i18n="currency.chf">
+                                Svájci frank
+                            </small>
+
+                        </div>
+
+                        <strong id="chfHuf">
+                            -- Ft
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="exchange-updated"
+                    id="exchangeUpdated"
+                >
+                    Frissítés...
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section
+        class="section"
+        id="projects"
+    >
+
+        <div class="section-heading">
+
+            <div>
+
+                <p
+                    class="eyebrow"
+                    data-i18n="projects.eyebrow"
+                >
+                    MUNKÁIM
+                </p>
+
+                <h2 data-i18n="projects.title">
+                    Projektek
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    1
+                </div>
+
+                <div class="project-content">
+
+                    <span
+                        class="project-category"
+                        data-i18n="project.category"
+                    >
+                        BSc szakdolgozati projekt
+                    </span>
+
+                    <h3>
+                        AutoScale Fleet
+                    </h3>
+
+                    <p data-i18n="project.description">
+                        Jelenleg még fejlesztés alatt áll.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Azure</span>
+                        <span>Docker</span>
+                        <span>DevOps</span>
+
+                    </div>
+
+                </div>
+
+                <a
+                    href="#"
+                    class="project-link"
+                    data-i18n="project.view"
+                >
+                    Megtekintés →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CV ================= -->
+
+    <section
+        class="section cv-section"
+        id="cv"
+    >
+
+        <div class="section-heading">
+
+            <div>
+
+                <p
+                    class="eyebrow"
+                    data-i18n="cv.eyebrow"
+                >
+                    RÓLAM
+                </p>
+
+                <h2 data-i18n="cv.title">
+                    Curriculum Vitae
+                </h2>
+
+            </div>
+
+            <button
+                class="btn btn-secondary"
+                id="printCv"
+                type="button"
+                data-i18n="cv.print"
+            >
+                CV nyomtatása
+            </button>
+
+        </div>
+
+
+        <div class="cv-grid">
+
+            <div class="cv-sidebar">
+
+                <div class="profile-placeholder">
+
+                    <img
+                        src="c:\Users\User\Downloads\kép.jpg"
+                        alt="Balla Árpád Máté"
+                    >
+
+                </div>
+
+                <h3>
+                    Balla Árpád Máté
+                </h3>
+
+                <p
+                    class="muted"
+                    data-i18n="cv.position"
+                >
+                    Junior Cloud Engineer
+                </p>
+
+
+                <div class="contact-list">
+
+                    <a href="mailto:ballaarpi0318@gmail.com">
+                        📧 ballaarpi0318@gmail.com
+                    </a>
+
+                    <a href="tel:+36307342737">
+                        📱 +36 30 734 2737
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/svulz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        f Facebook
+                    </a>
+
+                    <a href="#">
+                        🌐 dolgozunkrajta.hu
+                    </a>
+
+                    <span>
+                        📍 Szolnok, Hungary
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="cv-content">
+
+                <!-- PROFILE -->
+
+                <div class="cv-block">
+
+                    <h3 data-i18n="cv.profile.title">
+                        Profil
+                    </h3>
+
+                    <p data-i18n="cv.profile.text">
+                        Programtervező informatikus BSc diplomával
+                        rendelkezem az SZTE-ről, DevOps specializációval.
+                        A szakdolgozatom leginkább egy gyakorlati probléma
+                        megoldásához vezetett, melynek megvalósítása során
+                        DevOps és Cloud technológiákat alkalmaztam.
+                        Mindezek mellett KodeKloud - DevOps Pro
+                        tanúsítvánnyal rendelkezem.
+                        Nyelveket tekintve angolul középfokon (B2),
+                        németül felsőfokon (C1) és szlovénül szintén
+                        felsőfokon (C1) tudok magabiztosan kommunikálni.
+                        Szakmailag tudásomat a DevOps területén szeretném
+                        a továbbiakban elmélyíteni és fejleszteni.
+                    </p>
+
+                </div>
+
+
+                <!-- EXPERIENCE -->
+
+                <div class="cv-block">
+
+                    <h3 data-i18n="cv.experience.title">
+                        Tapasztalat
+                    </h3>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+
+                            <span
+                                class="timeline-date"
+                                data-i18n="cv.experience.current.date"
+                            >
+                                2026 — jelenleg
+                            </span>
+
+                            <h4 data-i18n="cv.experience.current.title">
+                                Pozíció / Munkahely
+                            </h4>
+
+                            <p data-i18n="cv.experience.current.text">
+                                Még nincsen. Dolgozunk rajta.
+                            </p>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <h4 data-i18n="cv.experience.previous.title">
+                                Korábbi pozíció
+                            </h4>
+
+                            <p data-i18n="cv.experience.previous.text">
+                                Még nincsen. Dolgozunk rajta.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EDUCATION -->
+
+                <div class="cv-block">
+
+                    <h3 data-i18n="cv.education.title">
+                        Tanulmányok
+                    </h3>
+
+                    <div class="education-item">
+
+                        <span>
+                            2025 - 2028
+                        </span>
+
+                        <div>
+
+                            <h4 data-i18n="cv.education.school">
+                                SZTE - Szegedi Tudományegyetem
+                                Természettudományi és Informatikai Kar
+                            </h4>
+
+                            <p data-i18n="cv.education.degree">
+                                Programtervező informatikus BSc
+                                nappali képzés
+                            </p>
+
+                            <p data-i18n="cv.education.specialization">
+                                Specializáció: DevOps területén
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- LANGUAGES -->
+
+                <div class="cv-block">
+
+                    <h3 data-i18n="cv.languages.title">
+                        Nyelvtudás
+                    </h3>
+
+                <div class="language-list">
+
+                    <div class="language-item">
+                        <strong data-i18n="cv.languages.hungarian.name">
+                            Magyar
+                        </strong>
+
+                        <span data-i18n="cv.languages.hungarian.level">
+                            Anyanyelvi szint (C2)
+                        </span>
+                    </div>
+
+                    <div class="language-item">
+                     <strong data-i18n="cv.languages.english.name">
+                        Angol
+                    </strong>
+
+                        <span data-i18n="cv.languages.english.level">
+                            Középfok (B2)
+                        </span>
+                    </div>
+
+                    <div class="language-item">
+                        <strong data-i18n="cv.languages.german.name">
+                            Német
+                        </strong>
+
+                        <span data-i18n="cv.languages.german.level">
+                            Felsőfok (C1)
+                        </span>
+                    </div>
+
+                     <div class="language-item">
+                        <strong data-i18n="cv.languages.slovenian.name">
+                            Szlovén
+                        </strong>
+
+                        <span data-i18n="cv.languages.slovenian.level">
+                            Felsőfok (C1)
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+                <!-- CERTIFICATIONS -->
+
+                <div class="cv-block">
+
+                    <h3 data-i18n="cv.certifications.title">
+                        Tanúsítványok és egyéb képesítések
+                    </h3>
+
+                    <div class="certification-list">
+
+                        <div class="certification-item">
+
+                            <div class="certification-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h4 data-i18n="cv.certifications.devopsPro.title">
+                                    KodeKloud DevOps Pro
+                                </h4>
+
+                                <p data-i18n="cv.certifications.devopsPro.description">
+                                    DevOps Pro tanúsítvány
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SKILLS -->
+
+                <div class="cv-block">
+
+                    <h3 data-i18n="cv.skills.title">
+                        Készségek
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>Azure</span>
+                        <span>Azure CLI</span>
+                        <span>Bash</span>
+                        <span>CI/CD</span>
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Kubernetes</span>
+                        <span>Linux</span>
+                        <span>PostgreSQL</span>
+                        <span>Python</span>
+                        <span>SSH</span>
+                        <span>Terraform</span>
+                        <span>VS Code</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div>
+
+            <strong>
+                Balla Árpád Máté
+            </strong>
+
+            <p>
+                © <span id="year"></span>
+                <span data-i18n="footer.rights">
+                    Minden jog fenntartva.
+                </span>
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a
+                href="#home"
+                data-i18n="nav.home"
+            >
+                Főoldal
+            </a>
+
+            <a
+                href="#projects"
+                data-i18n="nav.projects"
+            >
+                Projektek
+            </a>
+
+            <a
+                href="#cv"
+                data-i18n="nav.cv"
+            >
+                CV
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
