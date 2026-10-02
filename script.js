@@ -10,6 +10,10 @@
 
 const translations = {
 
+    /* =====================================================
+       HUNGARIAN
+    ===================================================== */
+
     hu: {
 
         htmlLang: "hu",
@@ -70,6 +74,15 @@ const translations = {
             watch: "Okosóra"
         },
 
+        contacts: {
+            label: "ELÉRHETŐSÉGEK",
+            email: "E-mail",
+            phone: "Telefonszám",
+            facebook: "Facebook",
+            web: "Weboldal",
+            location: "Lakhely"
+        },
+
         exchange: {
             label: "ÁRFOLYAMOK",
             title: "Devizák",
@@ -100,6 +113,14 @@ const translations = {
             eyebrow: "RÓLAM",
             title: "Curriculum Vitae",
             print: "CV nyomtatása",
+
+            viewer: {
+                label: "CURRICULUM VITAE",
+                title: "Teljes CV megtekintése",
+                description:
+                    "A teljes önéletrajzom megtekintéséhez kattints az alábbi gombra.",
+                button: "Teljes CV megtekintése"
+            },
 
             viewTitle: "Teljes CV megtekintése",
 
@@ -288,6 +309,15 @@ const translations = {
             watch: "Smartwatch"
         },
 
+        contacts: {
+            label: "CONTACT",
+            email: "E-mail",
+            phone: "Phone",
+            facebook: "Facebook",
+            web: "Website",
+            location: "Location"
+        },
+
         exchange: {
             label: "EXCHANGE RATES",
             title: "Currencies",
@@ -318,6 +348,14 @@ const translations = {
             eyebrow: "ABOUT ME",
             title: "Curriculum Vitae",
             print: "Print CV",
+
+            viewer: {
+                label: "CURRICULUM VITAE",
+                title: "View Full CV",
+                description:
+                    "Click the button below to view my complete CV.",
+                button: "View Full CV"
+            },
 
             viewTitle: "View Full CV",
 
@@ -506,6 +544,15 @@ const translations = {
             watch: "Smartwatch"
         },
 
+        contacts: {
+            label: "KONTAKT",
+            email: "E-Mail",
+            phone: "Telefonnummer",
+            facebook: "Facebook",
+            web: "Webseite",
+            location: "Wohnort"
+        },
+
         exchange: {
             label: "WECHSELKURSE",
             title: "Währungen",
@@ -536,6 +583,14 @@ const translations = {
             eyebrow: "ÜBER MICH",
             title: "Lebenslauf",
             print: "Lebenslauf drucken",
+
+            viewer: {
+                label: "LEBENSLAUF",
+                title: "Vollständigen Lebenslauf ansehen",
+                description:
+                    "Klicken Sie auf die Schaltfläche unten, um meinen vollständigen Lebenslauf anzusehen.",
+                button: "Vollständigen Lebenslauf ansehen"
+            },
 
             viewTitle: "Vollständigen Lebenslauf ansehen",
 
@@ -724,6 +779,15 @@ const translations = {
             watch: "Pametna ura"
         },
 
+        contacts: {
+            label: "KONTAKT",
+            email: "E-pošta",
+            phone: "Telefonska številka",
+            facebook: "Facebook",
+            web: "Spletna stran",
+            location: "Prebivališče"
+        },
+
         exchange: {
             label: "MENJALNI TEČAJI",
             title: "Valute",
@@ -754,6 +818,14 @@ const translations = {
             eyebrow: "O MENI",
             title: "Življenjepis",
             print: "Natisni življenjepis",
+
+            viewer: {
+                label: "ŽIVLJENJEPIS",
+                title: "Ogled celotnega življenjepisa",
+                description:
+                    "Za ogled celotnega življenjepisa kliknite spodnji gumb.",
+                button: "Ogled celotnega življenjepisa"
+            },
 
             viewTitle: "Ogled celotnega življenjepisa",
 
@@ -975,12 +1047,18 @@ function setLanguage(language) {
 
     updateWeatherText();
 
+    updateWeatherLocationText();
+
     updateExchangeText();
 
     updateStatusUI();
 
 }
 
+
+/* =========================================================
+   LANGUAGE BUTTON
+========================================================= */
 
 function updateLanguageButton() {
 
@@ -1690,7 +1768,6 @@ function updateDeviceInfo() {
 
 updateDeviceInfo();
 
-
 window.addEventListener(
     "resize",
     updateDeviceInfo
@@ -1803,7 +1880,7 @@ function weatherCodeInfo(code) {
 
 
 /* =========================================================
-   WEATHER TRANSLATION UPDATE
+   WEATHER TRANSLATION
 ========================================================= */
 
 function updateWeatherText() {
@@ -1817,6 +1894,25 @@ function updateWeatherText() {
             getTranslation(
                 "weather.loading"
             );
+
+    }
+
+}
+
+
+function updateWeatherLocationText() {
+
+    if (!weatherLocation) {
+        return;
+    }
+
+    if (
+        weatherCoordinates.name ===
+        "Aktuális hely"
+    ) {
+
+        weatherLocation.textContent =
+            getCurrentLocationText();
 
     }
 
@@ -2067,7 +2163,10 @@ async function loadWeather() {
         if (weatherLocation) {
 
             weatherLocation.textContent =
-                weatherCoordinates.name;
+                weatherCoordinates.name ===
+                "Aktuális hely"
+                    ? getCurrentLocationText()
+                    : weatherCoordinates.name;
 
         }
 
@@ -2204,12 +2303,13 @@ const exchangeUpdated =
 
 function updateExchangeText() {
 
+    if (!exchangeUpdated) {
+        return;
+    }
+
     if (
-        exchangeUpdated &&
-        (
-            exchangeUpdated.textContent.includes("...") ||
-            exchangeUpdated.textContent === ""
-        )
+        exchangeUpdated.textContent.includes("...") ||
+        exchangeUpdated.textContent === ""
     ) {
 
         exchangeUpdated.textContent =
@@ -2393,80 +2493,6 @@ setInterval(
 
 
 /* =========================================================
-   CV VIEWER
-========================================================= */
-
-/*
-    A CV PDF fájl helye.
-
-    Ha a CV.pdf ugyanabban a mappában van,
-    ahol az index.html található, akkor ezt
-    nem kell módosítani.
-
-    Példa:
-
-    Portfolio/
-    ├── index.html
-    ├── style.css
-    ├── script.js
-    └── CV.pdf
-*/
-
-const cvFileUrl =
-    "CV.pdf";
-
-
-/* =========================================================
-   CV TARTALOM CSERÉJE
-========================================================= */
-
-const cvGrid =
-    document.querySelector(
-        ".cv-grid"
-    );
-
-
-if (cvGrid) {
-
-    cvGrid.innerHTML = `
-
-        <div class="cv-viewer-card">
-
-            <div class="cv-viewer-icon">
-                📄
-            </div>
-
-            <div class="cv-viewer-content">
-
-                <h3 data-i18n="cv.viewTitle">
-                    Teljes CV megtekintése
-                </h3>
-
-                <p data-i18n="cv.viewDescription">
-                    A teljes önéletrajz megtekintéséhez
-                    kattints az alábbi gombra.
-                </p>
-
-                <a
-                    href="${cvFileUrl}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-primary cv-view-button"
-                    data-i18n="cv.viewButton"
-                >
-                    Teljes CV megtekintése →
-                </a>
-
-            </div>
-
-        </div>
-
-    `;
-
-}
-
-
-/* =========================================================
    PRINT CV
 ========================================================= */
 
@@ -2524,4 +2550,3 @@ setLanguage(
 setStatus(
     currentStatus
 );
-
