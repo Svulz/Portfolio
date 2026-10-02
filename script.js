@@ -14,7 +14,7 @@ const translations = {
 
         htmlLang: "hu",
 
-        logo: "Vissza az oldal tetejére",
+        logo: "Vissza",
 
         nav: {
             home: "Főoldal",
@@ -24,10 +24,15 @@ const translations = {
         },
 
         hero: {
-            online: "Online",
             eyebrow: "Weboldal",
             description:
                 "Ez az én személyes oldalam, ahol mindent leírok magamról és főbb érdeklődési köreimről."
+        },
+
+        status: {
+            online: "Online",
+            offline: "Offline",
+            invisible: "Láthatatlan"
         },
 
         buttons: {
@@ -54,21 +59,9 @@ const translations = {
             location: "Helymeghatározás..."
         },
 
-        calendar: {
-            label: "NAPTÁR",
-            mon: "H",
-            tue: "K",
-            wed: "Sze",
-            thu: "Cs",
-            fri: "P",
-            sat: "Szo",
-            sun: "V"
-        },
-
         quick: {
             label: "GYORS INFÓ",
             date: "Mai dátum",
-            timezone: "Időzóna",
             device: "Eszköz",
             browser: "Böngésző",
             mobile: "Mobil",
@@ -107,6 +100,14 @@ const translations = {
             eyebrow: "RÓLAM",
             title: "Curriculum Vitae",
             print: "CV nyomtatása",
+
+            viewTitle: "Teljes CV megtekintése",
+
+            viewDescription:
+                "A teljes önéletrajz megtekintéséhez kattints az alábbi gombra.",
+
+            viewButton: "Teljes CV megtekintése →",
+
             position: "Junior Cloud Engineer",
 
             profile: {
@@ -144,6 +145,43 @@ const translations = {
 
                 specialization:
                     "Specializáció: DevOps"
+
+            },
+
+            languages: {
+
+                title: "Nyelvtudás",
+
+                hungarian: {
+                    name: "Magyar",
+                    level: "Anyanyelvi szint (C2)"
+                },
+
+                english: {
+                    name: "Angol",
+                    level: "Középfok (B2)"
+                },
+
+                german: {
+                    name: "Német",
+                    level: "Felsőfok (C1)"
+                },
+
+                slovenian: {
+                    name: "Szlovén",
+                    level: "Felsőfok (C1)"
+                }
+
+            },
+
+            certifications: {
+
+                title: "Tanúsítványok és egyéb képesítések",
+
+                devopsPro: {
+                    title: "KodeKloud DevOps Pro",
+                    description: "DevOps Pro tanúsítvány"
+                }
 
             },
 
@@ -204,10 +242,15 @@ const translations = {
         },
 
         hero: {
-            online: "Online",
             eyebrow: "Website",
             description:
                 "This is my personal website where I share information about myself and my main areas of interest."
+        },
+
+        status: {
+            online: "Online",
+            offline: "Offline",
+            invisible: "Invisible"
         },
 
         buttons: {
@@ -234,21 +277,9 @@ const translations = {
             location: "Finding location..."
         },
 
-        calendar: {
-            label: "CALENDAR",
-            mon: "Mon",
-            tue: "Tue",
-            wed: "Wed",
-            thu: "Thu",
-            fri: "Fri",
-            sat: "Sat",
-            sun: "Sun"
-        },
-
         quick: {
             label: "QUICK INFO",
             date: "Today's date",
-            timezone: "Timezone",
             device: "Device",
             browser: "Browser",
             mobile: "Mobile",
@@ -287,6 +318,14 @@ const translations = {
             eyebrow: "ABOUT ME",
             title: "Curriculum Vitae",
             print: "Print CV",
+
+            viewTitle: "View Full CV",
+
+            viewDescription:
+                "Click the button below to view my complete CV.",
+
+            viewButton: "View Full CV →",
+
             position: "Junior Cloud Engineer",
 
             profile: {
@@ -324,6 +363,43 @@ const translations = {
 
                 specialization:
                     "Specialization: DevOps"
+
+            },
+
+            languages: {
+
+                title: "Languages",
+
+                hungarian: {
+                    name: "Hungarian",
+                    level: "Native level (C2)"
+                },
+
+                english: {
+                    name: "English",
+                    level: "Intermediate (B2)"
+                },
+
+                german: {
+                    name: "German",
+                    level: "Advanced (C1)"
+                },
+
+                slovenian: {
+                    name: "Slovenian",
+                    level: "Advanced (C1)"
+                }
+
+            },
+
+            certifications: {
+
+                title: "Certifications and qualifications",
+
+                devopsPro: {
+                    title: "KodeKloud DevOps Pro",
+                    description: "DevOps Pro certification"
+                }
 
             },
 
@@ -384,10 +460,15 @@ const translations = {
         },
 
         hero: {
-            online: "Online",
             eyebrow: "Webseite",
             description:
                 "Dies ist meine persönliche Webseite, auf der ich Informationen über mich und meine wichtigsten Interessen teile."
+        },
+
+        status: {
+            online: "Online",
+            offline: "Offline",
+            invisible: "Unsichtbar"
         },
 
         buttons: {
@@ -414,21 +495,9 @@ const translations = {
             location: "Standort wird ermittelt..."
         },
 
-        calendar: {
-            label: "KALENDER",
-            mon: "Mo",
-            tue: "Di",
-            wed: "Mi",
-            thu: "Do",
-            fri: "Fr",
-            sat: "Sa",
-            sun: "So"
-        },
-
         quick: {
             label: "SCHNELLINFO",
             date: "Heutiges Datum",
-            timezone: "Zeitzone",
             device: "Gerät",
             browser: "Browser",
             mobile: "Mobil",
@@ -467,6 +536,14 @@ const translations = {
             eyebrow: "ÜBER MICH",
             title: "Lebenslauf",
             print: "Lebenslauf drucken",
+
+            viewTitle: "Vollständigen Lebenslauf ansehen",
+
+            viewDescription:
+                "Klicken Sie auf die Schaltfläche unten, um meinen vollständigen Lebenslauf anzusehen.",
+
+            viewButton: "Vollständigen Lebenslauf ansehen →",
+
             position: "Junior Cloud Engineer",
 
             profile: {
@@ -504,6 +581,43 @@ const translations = {
 
                 specialization:
                     "Spezialisierung: DevOps"
+
+            },
+
+            languages: {
+
+                title: "Sprachkenntnisse",
+
+                hungarian: {
+                    name: "Ungarisch",
+                    level: "Muttersprache (C2)"
+                },
+
+                english: {
+                    name: "Englisch",
+                    level: "Mittelstufe (B2)"
+                },
+
+                german: {
+                    name: "Deutsch",
+                    level: "Fortgeschritten (C1)"
+                },
+
+                slovenian: {
+                    name: "Slowenisch",
+                    level: "Fortgeschritten (C1)"
+                }
+
+            },
+
+            certifications: {
+
+                title: "Zertifikate und Qualifikationen",
+
+                devopsPro: {
+                    title: "KodeKloud DevOps Pro",
+                    description: "DevOps Pro Zertifizierung"
+                }
 
             },
 
@@ -564,10 +678,15 @@ const translations = {
         },
 
         hero: {
-            online: "Na spletu",
             eyebrow: "Spletna stran",
             description:
                 "To je moja osebna spletna stran, kjer predstavljam informacije o sebi in svojih glavnih področjih zanimanja."
+        },
+
+        status: {
+            online: "Na spletu",
+            offline: "Brez povezave",
+            invisible: "Neviden"
         },
 
         buttons: {
@@ -594,21 +713,9 @@ const translations = {
             location: "Iskanje lokacije..."
         },
 
-        calendar: {
-            label: "KOLEDAR",
-            mon: "Pon",
-            tue: "Tor",
-            wed: "Sre",
-            thu: "Čet",
-            fri: "Pet",
-            sat: "Sob",
-            sun: "Ned"
-        },
-
         quick: {
             label: "HITRE INFORMACIJE",
             date: "Današnji datum",
-            timezone: "Časovni pas",
             device: "Naprava",
             browser: "Brskalnik",
             mobile: "Mobilni telefon",
@@ -647,6 +754,14 @@ const translations = {
             eyebrow: "O MENI",
             title: "Življenjepis",
             print: "Natisni življenjepis",
+
+            viewTitle: "Ogled celotnega življenjepisa",
+
+            viewDescription:
+                "Za ogled celotnega življenjepisa kliknite spodnji gumb.",
+
+            viewButton: "Ogled celotnega življenjepisa →",
+
             position: "Junior Cloud Engineer",
 
             profile: {
@@ -684,6 +799,43 @@ const translations = {
 
                 specialization:
                     "Specializacija: DevOps"
+
+            },
+
+            languages: {
+
+                title: "Znanje jezikov",
+
+                hungarian: {
+                    name: "Madžarščina",
+                    level: "Materni jezik (C2)"
+                },
+
+                english: {
+                    name: "Angleščina",
+                    level: "Srednja raven (B2)"
+                },
+
+                german: {
+                    name: "Nemščina",
+                    level: "Napredna raven (C1)"
+                },
+
+                slovenian: {
+                    name: "Slovenščina",
+                    level: "Napredna raven (C1)"
+                }
+
+            },
+
+            certifications: {
+
+                title: "Certifikati in druge kvalifikacije",
+
+                devopsPro: {
+                    title: "KodeKloud DevOps Pro",
+                    description: "DevOps Pro certifikat"
+                }
 
             },
 
@@ -819,13 +971,13 @@ function setLanguage(language) {
 
     updateClock();
 
-    renderCalendar();
-
     updateDeviceInfo();
 
     updateWeatherText();
 
     updateExchangeText();
+
+    updateStatusUI();
 
 }
 
@@ -867,11 +1019,6 @@ const languageToggle =
         "languageToggle"
     );
 
-const languageMenu =
-    document.getElementById(
-        "languageMenu"
-    );
-
 const languageSelector =
     document.querySelector(
         ".language-selector"
@@ -891,6 +1038,13 @@ if (
 
             languageSelector.classList.toggle(
                 "active"
+            );
+
+            languageToggle.setAttribute(
+                "aria-expanded",
+                languageSelector.classList.contains(
+                    "active"
+                )
             );
 
         }
@@ -921,11 +1075,215 @@ document
 
                 }
 
+                if (languageToggle) {
+
+                    languageToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+
             }
         );
 
     });
 
+
+/* =========================================================
+   STATUS SYSTEM
+========================================================= */
+
+const statusToggle =
+    document.getElementById(
+        "statusToggle"
+    );
+
+const statusMenu =
+    document.getElementById(
+        "statusMenu"
+    );
+
+const statusSelector =
+    document.querySelector(
+        ".status-selector"
+    );
+
+const statusText =
+    document.getElementById(
+        "statusText"
+    );
+
+const statusDot =
+    document.getElementById(
+        "statusDot"
+    );
+
+
+const statusTranslations = {
+    online: "status.online",
+    offline: "status.offline",
+    invisible: "status.invisible"
+};
+
+
+let currentStatus =
+    localStorage.getItem(
+        "status"
+    ) || "online";
+
+
+function updateStatusUI() {
+
+    if (!statusToggle || !statusText || !statusDot) {
+        return;
+    }
+
+
+    const statusKey =
+        statusTranslations[currentStatus] ||
+        statusTranslations.online;
+
+
+    statusText.textContent =
+        getTranslation(statusKey);
+
+
+    statusToggle.classList.remove(
+        "status-online",
+        "status-offline",
+        "status-invisible"
+    );
+
+
+    statusToggle.classList.add(
+        `status-${currentStatus}`
+    );
+
+
+    statusDot.classList.remove(
+        "status-online",
+        "status-offline",
+        "status-invisible"
+    );
+
+
+    statusDot.classList.add(
+        `status-${currentStatus}`
+    );
+
+
+    document
+        .querySelectorAll(
+            ".status-menu button"
+        )
+        .forEach(button => {
+
+            button.classList.toggle(
+                "active",
+                button.dataset.status ===
+                currentStatus
+            );
+
+        });
+
+}
+
+
+function setStatus(status) {
+
+    if (
+        ![
+            "online",
+            "offline",
+            "invisible"
+        ].includes(status)
+    ) {
+        return;
+    }
+
+
+    currentStatus =
+        status;
+
+    localStorage.setItem(
+        "status",
+        status
+    );
+
+    updateStatusUI();
+
+}
+
+
+if (
+    statusToggle &&
+    statusSelector
+) {
+
+    statusToggle.addEventListener(
+        "click",
+        event => {
+
+            event.stopPropagation();
+
+            statusSelector.classList.toggle(
+                "active"
+            );
+
+            statusToggle.setAttribute(
+                "aria-expanded",
+                statusSelector.classList.contains(
+                    "active"
+                )
+            );
+
+        }
+    );
+
+}
+
+
+document
+    .querySelectorAll(
+        ".status-menu button"
+    )
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                setStatus(
+                    button.dataset.status
+                );
+
+                if (statusSelector) {
+
+                    statusSelector.classList.remove(
+                        "active"
+                    );
+
+                }
+
+                if (statusToggle) {
+
+                    statusToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   CLOSE DROPDOWNS
+========================================================= */
 
 document.addEventListener(
     "click",
@@ -939,6 +1297,35 @@ document.addEventListener(
 
         }
 
+
+        if (languageToggle) {
+
+            languageToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+
+        if (statusSelector) {
+
+            statusSelector.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        if (statusToggle) {
+
+            statusToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
     }
 );
 
@@ -948,10 +1335,14 @@ document.addEventListener(
 ========================================================= */
 
 const themeToggle =
-    document.getElementById("themeToggle");
+    document.getElementById(
+        "themeToggle"
+    );
 
 const themeIcon =
-    document.getElementById("themeIcon");
+    document.getElementById(
+        "themeIcon"
+    );
 
 
 function applyTheme(theme) {
@@ -1015,20 +1406,33 @@ if (themeToggle) {
 ========================================================= */
 
 const menuToggle =
-    document.getElementById("menuToggle");
+    document.getElementById(
+        "menuToggle"
+    );
 
 const nav =
-    document.getElementById("nav");
+    document.getElementById(
+        "nav"
+    );
 
 
 if (menuToggle && nav) {
 
     menuToggle.addEventListener(
         "click",
-        () => {
+        event => {
+
+            event.stopPropagation();
 
             nav.classList.toggle(
                 "active"
+            );
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                nav.classList.contains(
+                    "active"
+                )
             );
 
         }
@@ -1047,6 +1451,11 @@ if (menuToggle && nav) {
                         "active"
                     );
 
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
                 }
             );
 
@@ -1060,19 +1469,24 @@ if (menuToggle && nav) {
 ========================================================= */
 
 const clockElement =
-    document.getElementById("clock");
+    document.getElementById(
+        "clock"
+    );
 
 const dateElement =
-    document.getElementById("date");
+    document.getElementById(
+        "date"
+    );
 
 const timezoneElement =
-    document.getElementById("timezone");
-
-const timezoneInfo =
-    document.getElementById("timezoneInfo");
+    document.getElementById(
+        "timezone"
+    );
 
 const todayInfo =
-    document.getElementById("todayInfo");
+    document.getElementById(
+        "todayInfo"
+    );
 
 
 function getLocale() {
@@ -1153,14 +1567,6 @@ function updateClock() {
 
     }
 
-
-    if (timezoneInfo) {
-
-        timezoneInfo.textContent =
-            timezone;
-
-    }
-
 }
 
 
@@ -1201,26 +1607,12 @@ function updateDeviceInfo() {
         navigator.userAgent.toLowerCase();
 
 
-    /*
-       OKOSÓRA
-       -----------------------------------------------------
-       Nagyon kis kijelző vagy smartwatch / Wear OS
-       azonosítása.
-    */
-
     const isWatch =
         width <= 250 ||
         /watch|sm-watch|wear os|wearos/.test(
             userAgent
         );
 
-
-    /*
-       TABLET
-       -----------------------------------------------------
-       iPad, Android tablet vagy érintőképernyős,
-       közepes méretű eszköz.
-    */
 
     const isTablet =
         !isWatch &&
@@ -1236,12 +1628,6 @@ function updateDeviceInfo() {
         );
 
 
-    /*
-       TELEFON
-       -----------------------------------------------------
-       iPhone, Android mobil vagy kis kijelző.
-    */
-
     const isMobile =
         !isWatch &&
         !isTablet &&
@@ -1253,10 +1639,6 @@ function updateDeviceInfo() {
         );
 
 
-    /*
-       ESZKÖZ MEGJELENÍTÉSE
-    */
-
     if (isWatch) {
 
         deviceInfo.textContent =
@@ -1265,10 +1647,7 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-
-            deviceIcon.textContent =
-                "⌚";
-
+            deviceIcon.textContent = "⌚";
         }
 
     } else if (isMobile) {
@@ -1279,10 +1658,7 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-
-            deviceIcon.textContent =
-                "📱";
-
+            deviceIcon.textContent = "📱";
         }
 
     } else if (isTablet) {
@@ -1293,10 +1669,7 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-
-            deviceIcon.textContent =
-                "📲";
-
+            deviceIcon.textContent = "📲";
         }
 
     } else {
@@ -1307,10 +1680,7 @@ function updateDeviceInfo() {
             );
 
         if (deviceIcon) {
-
-            deviceIcon.textContent =
-                "💻";
-
+            deviceIcon.textContent = "💻";
         }
 
     }
@@ -1325,252 +1695,6 @@ window.addEventListener(
     "resize",
     updateDeviceInfo
 );
-
-
-/* =========================================================
-   CALENDAR
-========================================================= */
-
-const calendarTitle =
-    document.getElementById(
-        "calendarTitle"
-    );
-
-const calendarDays =
-    document.getElementById(
-        "calendarDays"
-    );
-
-const prevMonth =
-    document.getElementById(
-        "prevMonth"
-    );
-
-const nextMonth =
-    document.getElementById(
-        "nextMonth"
-    );
-
-
-let calendarDate =
-    new Date();
-
-
-function renderCalendar() {
-
-    if (
-        !calendarTitle ||
-        !calendarDays
-    ) {
-
-        return;
-
-    }
-
-
-    const year =
-        calendarDate.getFullYear();
-
-    const month =
-        calendarDate.getMonth();
-
-
-    let monthName =
-        new Intl.DateTimeFormat(
-            getLocale(),
-            {
-                month: "long",
-                year: "numeric"
-            }
-        ).format(calendarDate);
-
-
-    monthName =
-        monthName.charAt(0).toUpperCase() +
-        monthName.slice(1);
-
-
-    calendarTitle.textContent =
-        monthName;
-
-
-    calendarDays.innerHTML =
-        "";
-
-
-    const firstDay =
-        new Date(
-            year,
-            month,
-            1
-        ).getDay();
-
-
-    const daysInMonth =
-        new Date(
-            year,
-            month + 1,
-            0
-        ).getDate();
-
-
-    const previousMonthDays =
-        new Date(
-            year,
-            month,
-            0
-        ).getDate();
-
-
-    const mondayIndex =
-        firstDay === 0
-            ? 6
-            : firstDay - 1;
-
-
-    /* ELŐZŐ HÓNAP */
-
-    for (
-        let i = mondayIndex - 1;
-        i >= 0;
-        i--
-    ) {
-
-        const day =
-            document.createElement(
-                "div"
-            );
-
-        day.className =
-            "calendar-day other-month";
-
-        day.textContent =
-            previousMonthDays - i;
-
-        calendarDays.appendChild(
-            day
-        );
-
-    }
-
-
-    /* AKTUÁLIS HÓNAP */
-
-    const today =
-        new Date();
-
-
-    for (
-        let dayNumber = 1;
-        dayNumber <= daysInMonth;
-        dayNumber++
-    ) {
-
-        const day =
-            document.createElement(
-                "div"
-            );
-
-        day.className =
-            "calendar-day";
-
-        day.textContent =
-            dayNumber;
-
-
-        if (
-            dayNumber === today.getDate() &&
-            month === today.getMonth() &&
-            year === today.getFullYear()
-        ) {
-
-            day.classList.add(
-                "today"
-            );
-
-        }
-
-
-        calendarDays.appendChild(
-            day
-        );
-
-    }
-
-
-    /* KÖVETKEZŐ HÓNAP */
-
-    const totalCells =
-        calendarDays.children.length;
-
-
-    const remaining =
-        42 - totalCells;
-
-
-    for (
-        let i = 1;
-        i <= remaining;
-        i++
-    ) {
-
-        const day =
-            document.createElement(
-                "div"
-            );
-
-        day.className =
-            "calendar-day other-month";
-
-        day.textContent =
-            i;
-
-        calendarDays.appendChild(
-            day
-        );
-
-    }
-
-}
-
-
-if (prevMonth) {
-
-    prevMonth.addEventListener(
-        "click",
-        () => {
-
-            calendarDate.setMonth(
-                calendarDate.getMonth() - 1
-            );
-
-            renderCalendar();
-
-        }
-    );
-
-}
-
-
-if (nextMonth) {
-
-    nextMonth.addEventListener(
-        "click",
-        () => {
-
-            calendarDate.setMonth(
-                calendarDate.getMonth() + 1
-            );
-
-            renderCalendar();
-
-        }
-    );
-
-}
-
-
-renderCalendar();
 
 
 /* =========================================================
@@ -1686,7 +1810,7 @@ function updateWeatherText() {
 
     if (
         weatherDescription &&
-        !weatherDescription.dataset.apiLoaded
+        weatherDescription.dataset.apiLoaded !== "true"
     ) {
 
         weatherDescription.textContent =
@@ -1993,33 +2117,6 @@ function getCurrentLocationText() {
 
 
 /* =========================================================
-   WEATHER LANGUAGE REFRESH
-========================================================= */
-
-function refreshWeatherLanguage() {
-
-    if (
-        !weatherDescription ||
-        weatherDescription.dataset.apiLoaded !== "true"
-    ) {
-
-        return;
-
-    }
-
-
-    /*
-       Ha már betöltődött az időjárás,
-       újra lekérjük a kódhoz tartozó
-       fordítást.
-    */
-
-    loadWeather();
-
-}
-
-
-/* =========================================================
    INITIALIZE WEATHER
 ========================================================= */
 
@@ -2109,7 +2206,10 @@ function updateExchangeText() {
 
     if (
         exchangeUpdated &&
-        exchangeUpdated.textContent.includes("...")
+        (
+            exchangeUpdated.textContent.includes("...") ||
+            exchangeUpdated.textContent === ""
+        )
     ) {
 
         exchangeUpdated.textContent =
@@ -2293,6 +2393,80 @@ setInterval(
 
 
 /* =========================================================
+   CV VIEWER
+========================================================= */
+
+/*
+    A CV PDF fájl helye.
+
+    Ha a CV.pdf ugyanabban a mappában van,
+    ahol az index.html található, akkor ezt
+    nem kell módosítani.
+
+    Példa:
+
+    Portfolio/
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── CV.pdf
+*/
+
+const cvFileUrl =
+    "CV.pdf";
+
+
+/* =========================================================
+   CV TARTALOM CSERÉJE
+========================================================= */
+
+const cvGrid =
+    document.querySelector(
+        ".cv-grid"
+    );
+
+
+if (cvGrid) {
+
+    cvGrid.innerHTML = `
+
+        <div class="cv-viewer-card">
+
+            <div class="cv-viewer-icon">
+                📄
+            </div>
+
+            <div class="cv-viewer-content">
+
+                <h3 data-i18n="cv.viewTitle">
+                    Teljes CV megtekintése
+                </h3>
+
+                <p data-i18n="cv.viewDescription">
+                    A teljes önéletrajz megtekintéséhez
+                    kattints az alábbi gombra.
+                </p>
+
+                <a
+                    href="${cvFileUrl}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary cv-view-button"
+                    data-i18n="cv.viewButton"
+                >
+                    Teljes CV megtekintése →
+                </a>
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+/* =========================================================
    PRINT CV
 ========================================================= */
 
@@ -2342,4 +2516,12 @@ setLanguage(
     currentLanguage
 );
 
+
+/* =========================================================
+   INITIAL STATUS
+========================================================= */
+
+setStatus(
+    currentStatus
+);
 
