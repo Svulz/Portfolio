@@ -67,7 +67,9 @@ const translations = {
             label: "GYORS INFÓ",
             date: "Mai dátum",
             device: "Eszköz",
-            browser: "Böngésző",
+            birthday: "Születésnap",
+            gender: "Nem",
+            male: "Férfi",
             mobile: "Mobil",
             tablet: "Tablet",
             desktop: "Asztali",
@@ -80,7 +82,8 @@ const translations = {
             phone: "Telefonszám",
             facebook: "Facebook",
             web: "Weboldal",
-            location: "Lakhely"
+            location: "Lakhely",
+            locationValue: "Szolnok, Magyarország"
         },
 
         exchange: {
@@ -104,15 +107,21 @@ const translations = {
         },
 
         project: {
-            category: "BSc szakdolgozati projekt",
-            description: "Jelenleg még fejlesztés alatt áll.",
-            view: "Megtekintés →"
+
+            viewer: {
+                label: "PROJEKT",
+                title: "AutoScale Fleet",
+                description:
+                    "A szakdolgozati projektem teljes dokumentációjának megtekintéséhez kattints az alábbi gombra.",
+                button: "Projekt megtekintése"
+            }
+
         },
 
         cv: {
+
             eyebrow: "RÓLAM",
             title: "Curriculum Vitae",
-            print: "CV nyomtatása",
 
             viewer: {
                 label: "CURRICULUM VITAE",
@@ -302,7 +311,9 @@ const translations = {
             label: "QUICK INFO",
             date: "Today's date",
             device: "Device",
-            browser: "Browser",
+            birthday: "Birthday",
+            gender: "Gender",
+            male: "Male",
             mobile: "Mobile",
             tablet: "Tablet",
             desktop: "Desktop",
@@ -315,7 +326,8 @@ const translations = {
             phone: "Phone",
             facebook: "Facebook",
             web: "Website",
-            location: "Location"
+            location: "Location",
+            locationValue: "Szolnok, Hungary"
         },
 
         exchange: {
@@ -339,15 +351,21 @@ const translations = {
         },
 
         project: {
-            category: "BSc Thesis Project",
-            description: "Currently under development.",
-            view: "View project →"
+
+            viewer: {
+                label: "PROJECT",
+                title: "AutoScale Fleet",
+                description:
+                    "Click the button below to view the complete documentation of my thesis project.",
+                button: "View Project"
+            }
+
         },
 
         cv: {
+
             eyebrow: "ABOUT ME",
             title: "Curriculum Vitae",
-            print: "Print CV",
 
             viewer: {
                 label: "CURRICULUM VITAE",
@@ -537,7 +555,9 @@ const translations = {
             label: "SCHNELLINFO",
             date: "Heutiges Datum",
             device: "Gerät",
-            browser: "Browser",
+            birthday: "Geburtstag",
+            gender: "Geschlecht",
+            male: "Männlich",
             mobile: "Mobil",
             tablet: "Tablet",
             desktop: "Desktop",
@@ -550,7 +570,8 @@ const translations = {
             phone: "Telefonnummer",
             facebook: "Facebook",
             web: "Webseite",
-            location: "Wohnort"
+            location: "Wohnort",
+            locationValue: "Szolnok, Ungarn"
         },
 
         exchange: {
@@ -574,15 +595,21 @@ const translations = {
         },
 
         project: {
-            category: "BSc-Abschlussprojekt",
-            description: "Derzeit in Entwicklung.",
-            view: "Projekt ansehen →"
+
+            viewer: {
+                label: "PROJEKT",
+                title: "AutoScale Fleet",
+                description:
+                    "Klicken Sie auf die Schaltfläche unten, um die vollständige Dokumentation meines Abschlussprojekts anzusehen.",
+                button: "Projekt ansehen"
+            }
+
         },
 
         cv: {
+
             eyebrow: "ÜBER MICH",
             title: "Lebenslauf",
-            print: "Lebenslauf drucken",
 
             viewer: {
                 label: "LEBENSLAUF",
@@ -772,7 +799,9 @@ const translations = {
             label: "HITRE INFORMACIJE",
             date: "Današnji datum",
             device: "Naprava",
-            browser: "Brskalnik",
+            birthday: "Rojstni dan",
+            gender: "Spol",
+            male: "Moški",
             mobile: "Mobilni telefon",
             tablet: "Tablica",
             desktop: "Namizni računalnik",
@@ -785,7 +814,8 @@ const translations = {
             phone: "Telefonska številka",
             facebook: "Facebook",
             web: "Spletna stran",
-            location: "Prebivališče"
+            location: "Prebivališče",
+            locationValue: "Szolnok, Madžarska"
         },
 
         exchange: {
@@ -809,15 +839,21 @@ const translations = {
         },
 
         project: {
-            category: "BSc diplomski projekt",
-            description: "Trenutno je v razvoju.",
-            view: "Ogled projekta →"
+
+            viewer: {
+                label: "PROJEKT",
+                title: "AutoScale Fleet",
+                description:
+                    "Za ogled celotne dokumentacije mojega diplomskega projekta kliknite spodnji gumb.",
+                button: "Ogled projekta"
+            }
+
         },
 
         cv: {
+
             eyebrow: "O MENI",
             title: "Življenjepis",
-            print: "Natisni življenjepis",
 
             viewer: {
                 label: "ŽIVLJENJEPIS",
@@ -2490,30 +2526,6 @@ setInterval(
     loadExchangeRates,
     30 * 60 * 1000
 );
-
-
-/* =========================================================
-   PRINT CV
-========================================================= */
-
-const printCv =
-    document.getElementById(
-        "printCv"
-    );
-
-
-if (printCv) {
-
-    printCv.addEventListener(
-        "click",
-        () => {
-
-            window.print();
-
-        }
-    );
-
-}
 
 
 /* =========================================================
