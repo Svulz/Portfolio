@@ -473,6 +473,8 @@
 
                 <div class="info-list">
 
+                    <!-- DÁTUM -->
+
                     <div class="info-row">
 
                         <span>📅</span>
@@ -491,6 +493,8 @@
 
                     </div>
 
+
+                    <!-- ESZKÖZ -->
 
                     <div class="info-row">
 
@@ -513,20 +517,44 @@
                     </div>
 
 
-                    <!-- BÖNGÉSZŐ -->
+                    <!-- SZÜLETÉSNAP -->
 
                     <div class="info-row">
 
-                        <span>🌐</span>
+                        <span>🎂</span>
 
                         <div>
 
-                            <small data-i18n="quick.browser">
-                                Böngésző
+                            <small data-i18n="quick.birthday">
+                                Születésnap
                             </small>
 
-                            <strong id="browserInfo">
-                                —
+                            <strong id="birthdayInfo">
+                                1999. 03. 18.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NEM -->
+
+                    <div class="info-row">
+
+                        <span>♂</span>
+
+                        <div>
+
+                            <small data-i18n="quick.gender">
+                                Nem
+                            </small>
+
+                            <strong
+                                id="genderInfo"
+                                data-i18n="quick.male"
+                            >
+                                Férfi
                             </strong>
 
                         </div>
@@ -666,8 +694,8 @@
                                 Lakhely
                             </small>
 
-                            <strong>
-                                Szolnok, Hungary
+                            <strong data-i18n="contacts.locationValue">
+                                Szolnok, Magyarország
                             </strong>
 
                         </span>
@@ -813,7 +841,7 @@
     <!-- ================= PROJECTS ================= -->
 
     <section
-        class="section"
+        class="section projects-section"
         id="projects"
     >
 
@@ -837,55 +865,53 @@
         </div>
 
 
-        <div class="projects-grid">
+        <!-- PROJECT VIEWER -->
 
-            <article class="project-card">
+        <div class="cv-viewer-card project-viewer-card">
 
-                <div class="project-number">
-                    1
-                </div>
-
-
-                <div class="project-content">
-
-                    <span
-                        class="project-category"
-                        data-i18n="project.category"
-                    >
-                        BSc szakdolgozati projekt
-                    </span>
+            <div class="cv-viewer-icon">
+                📁
+            </div>
 
 
-                    <h3>
-                        AutoScale Fleet
-                    </h3>
+            <div class="cv-viewer-content">
+
+                <p
+                    class="card-label"
+                    data-i18n="project.viewer.label"
+                >
+                    PROJEKT
+                </p>
 
 
-                    <p data-i18n="project.description">
-                        Jelenleg még fejlesztés alatt áll.
-                    </p>
+                <h3 data-i18n="project.viewer.title">
+                    AutoScale Fleet
+                </h3>
 
 
-                    <div class="tags">
-
-                        <span>Azure</span>
-                        <span>Docker</span>
-                        <span>DevOps</span>
-
-                    </div>
-
-                </div>
+                <p data-i18n="project.viewer.description">
+                    A szakdolgozati projektem teljes dokumentációjának megtekintéséhez kattints az alábbi gombra.
+                </p>
 
 
                 <a
-                    href="#"
-                    class="project-link"
-                    data-i18n="project.view"
+                    href="AutoScale-Fleet.docx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary cv-view-button project-view-button"
                 >
-                    Megtekintés →
+
+                    <span data-i18n="project.viewer.button">
+                        Projekt megtekintése
+                    </span>
+
+                    <span>
+                        ↗
+                    </span>
+
                 </a>
 
-            </article>
+            </div>
 
         </div>
 
@@ -915,16 +941,6 @@
                 </h2>
 
             </div>
-
-
-            <button
-                class="btn btn-secondary"
-                id="printCv"
-                type="button"
-                data-i18n="cv.print"
-            >
-                CV nyomtatása
-            </button>
 
         </div>
 
